@@ -52,7 +52,7 @@ sess.run(tf.global_variables_initializer())
 for step  in range(2001): # train 노드를 실행(이때 학습이 일어남)
     # session을 실행시킬 때 각각 실행해도되지만 list에 넣어서 한꺼번에 실행시켜도 됨
     # train을 실행시킬 때 X와 Y의 값을 feed_dict를 통해 넘겨준다
-    cost_val, W_val, b_val, _ = sess.run([cost, W, b, train], feed_dict={X: [1, 2, 3], Y:[1, 2, 3]})
+    cost_val, W_val, b_val, _ = sess.run([cost, W, b, train], feed_dict={X: [1, 2, 3, 4, 5], Y:[2.1, 3.1, 4.1, 5.1, 6.1]})
     if step % 20 == 0:
         print(step, cost_val, W_val, b_val) # 학습이 일어난 뒤에 cost, W, b의 값이 어떻게 되는지 관찰
 
