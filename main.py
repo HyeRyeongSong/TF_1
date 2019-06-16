@@ -6,8 +6,8 @@ x_data = [1, 2, 3]
 y_data = [1, 2, 3]
 
 # W를 tensorflow variable로 선언하고 random 값을 줌
-# W가 잘 내려가는지 확인하기 위해 말도 안되는 큰 값을 W에 넣고 시작
-W = tf.Variable(5.0)
+# W가 잘 내려가는지 확인하기 위해 말도 안되는 작은 값을 W에 넣고 시작
+W = tf.Variable(-3.0)
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
